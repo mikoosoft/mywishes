@@ -1,0 +1,23 @@
+<ion-view view-title="My Wishlist">
+  <ion-content>
+    <ion-list>
+      <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="wish in wishlist.items" type="item-text-wrap" href="#/tab/wishes/{{wish.id}}">
+        <img ng-src="{{wish.thumbnail}}">
+        <h2>{{wish.title}}</h2>
+        <p>{{wish.description}}</p>
+        <i class="icon ion-chevron-right icon-accessory"></i>
+        <ion-option-button class="button-positive item-icon-left ion-share"
+                           ng-click="share(item)">
+         Share
+        </ion-option-button>
+        <ion-option-button class="button-calm item-icon-left ion-edit"
+                           ng-click="edit(item)">
+          Edit
+        </ion-option-button>
+        <ion-option-button class="button-assertive item-icon-left ion-trash-b" ng-click="remove(wish)">
+          Delete
+        </ion-option-button>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

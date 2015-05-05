@@ -1,0 +1,28 @@
+<ion-view view-title="Dashboard">
+  <ion-content class="padding">
+    <div class="list card">
+      <div class="item item-divider">Latest update</div>
+      <div class="item item-body">
+        <div>
+            Wensen van {{wishlist.owner}} laatst bijgewerkt op: <span>{{wishlist.lastUpdate | date:'dd-MM-yyyy HH:mm'}}<span>, aantal wensen: {{wishlist.items.length}}.
+        </div>
+      </div>
+    </div>
+    <div class="list card">
+      <div class="item item-divider">Updated wishlists</div>
+      <div class="item item-body">
+        <div>
+          Mike updated his birtday wishlist.
+        </div>
+      </div>
+    </div>
+    <div class="list card">
+      <div class="item item-divider">Upcoming birtdays</div>
+      <div class="item item-body">
+        <div>
+          Next birthday is <b>Tonny Dullaart</b> on May 7th.
+        </div>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>
